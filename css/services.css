@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background: #eee;
+    color: #000;
+    /* padding: 1.5em 2.5em; */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em 0 2.5em;
+    border-bottom: solid 1px #333;
+    margin: 0 2.5% 1.5em;
+    height: 5vh;
+}
+
+nav a:link {
+    padding: 0 .5em;
+    color: #000000;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+nav a:hover {
+    color: #91cf93;
+    text-decoration: underline;
+}
+
+.logo {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact-link {
+    text-decoration: none;
+}
+
+.contact-link div {
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo-link {
+    text-decoration: none;
+}
+
+.logo-link div {
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+a:visited {
+    color: #000000;
+}
+
+
+
+/**/
+
+html {
+    font-size: calc(15px + 0.390625vw);
+    line-height: 120%;
+    scroll-behavior: smooth;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 3rem;
+    padding: 0px 50px 75px 50px;
+}
+
+hgroup {
+    /* border:solid 1px red; */
+    flex: 1;
+    padding: 0px 50px 0px 0px;
+    color: #333;
+}
+
+article {
+    /* border:solid 1px teal; */
+    flex: 1;
+    z-index: 99;
+}
+
+hgroup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+h1 {
+    font-size: 3.8rem;
+    line-height: 100%;
+    text-align: right;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #adc178;
+    line-height: 100%;
+    text-align: right;
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+
+p {
+    color: #333;
+    line-height: 100%;
+    text-align: right;
+    /* padding-bottom: 20px; */
+}
+
+.stick_top {
+    position: sticky;
+    top: 3rem;
+}
+
+.mediumpic {
+    width: 200px;
+}
+
+.largepic {
+    width: 400px;
+}
+
+.largerpic {
+    width: 600px;
+}
+
+
+/* cards */
+
+.portfolio-card-link {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+    text-decoration: none; /* Remove underline from link */
+    align-items: flex-end; /* Align items to the right */
+    max-width: 644px; /* Set maximum width */
+}
+
+.portfolio-card-2 {
+    background-image: url(../images/event-img.jpg);
+    background-size: contain;
+    width: 642px;
+    height: 413px;
+    border: 2px solid #ddd;
+    border-radius: 26px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.portfolio-card-3 {
+    background-image: url(../images/upbeat-social-media.png);
+    background-size: contain;
+    width: 642px;
+    height: 413px;
+    border: 2px solid #ddd;
+    border-radius: 26px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.portfolio-card-4 {
+    background-image: url(../images/Case_Study_NeufCycle.jpg);
+    background-size: contain;
+    width: 642px;
+    height: 416px;
+    border: 2px solid #ddd;
+    border-radius: 26px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.portfolio-card-5 {
+    background-image: url(../images/professional-shoot-img.jpg);
+    background-size: contain;
+    width: 642px;
+    height: 416px;
+    border: 2px solid #ddd;
+    border-radius: 26px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+  
+.portfolio-card img {
+    width: 100%;
+    height: auto;
+    opacity: 0;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h2 {
+    margin-top: 0;
+}
+
+.card-content p {
+    margin-bottom: 20px;
+}
+
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+

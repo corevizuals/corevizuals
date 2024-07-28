@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contact us</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html" class="logo-link">
+        <h3>Core Vizuals</h3>
+      </a>
+    </div>
+    <nav>
+      <a href="services.html">SERVICES</a>
+      <a href="about-us.html">ABOUT US</a>
+      <a href="marketing.html">PROJECTS</a>
+    </nav>
+    <a href="contact.html" class="contact-link">
+      <div>CONTACT</div>
+    </a>
+  </header>
+
+  <form class="form-style-7" action="https://formspree.io/f/mrbzparq" method="post">
+    <h1>Fill Form</h1>
+    <ul>
+      <li>
+        <label for="name">Name</label>
+        <input type="text" name="name" maxlength="100" required>
+        <span>Enter your full name here</span>
+      </li>
+      <li>
+        <label for="email">Email</label>
+        <input type="email" name="email" maxlength="100" required>
+        <span>Enter a valid email address</span>
+      </li>
+      <li>
+        <label for="url">Website</label>
+        <input type="url" id="url" name="url" maxlength="100" required>
+        <span>Your website address (e.g., http://www.google.com)</span>
+      </li>
+      <li>
+        <label for="bio">Message</label>
+        <textarea name="bio" id="message" onkeyup="adjust_textarea(this)" required></textarea>
+        <span>How can we help</span>
+      </li>
+      <li>
+        <input type="submit" value="Send This">
+      </li>
+    </ul>
+  </form>
+
+  <script src="js/script.js"></script>
+  <script>
+    document.getElementById('url').addEventListener('blur', function() {
+      const urlField = this;
+      if (urlField.value && !urlField.value.startsWith('http://') && !urlField.value.startsWith('https://')) {
+        urlField.value = 'http://' + urlField.value;
+      }
+    });
+  </script>
+</body>
+</html>
